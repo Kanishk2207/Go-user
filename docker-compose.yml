@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "abcde"
+      MYSQL_DATABASE: bugsmirror
+      MYSQL_USER: mysql
+      MYSQL_PASSWORD: "abc"
+    expose:
+      - "3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+volumes:
+  mysql-data:

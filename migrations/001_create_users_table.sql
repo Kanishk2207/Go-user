@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    firstname VARCHAR(50) NOT NULL,
+    lastname VARCHAR(50) NOT NULL,
+    dob DATE,
+    email VARCHAR(100) NOT NULL,
+    phonenumber VARCHAR(20) NOT NULL
+);
+
